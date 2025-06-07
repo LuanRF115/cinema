@@ -1,4 +1,4 @@
-<img src="imagens/banner.jpg" class="banner">
+
 
 <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
