@@ -6,24 +6,24 @@ include "banner.php";
     <h2 class="display-5">Melhores avaliações</h2>
 
     <div class="row mb-5">
+        <?php
+        /* inicio da conexão com BD */
+        $servidor = 'localhost';
+        $bd = 'bd_filmes';
+        $usuario = 'root';
+        $senha = '';
+
+        $conexao = mysqli_connect($servidor, $usuario, $senha, $bd);
+
+        if(!$conexao){
+            die("deu ruim" . mysqli_connect_error());
+        }
+
+        echo "deu bom";
+        ?>
         <div class="col-3">
             <img src="img/filme1.webp" class="img-fluid">
             <h3>Jurassic Park</h3>
-            <span>⭐ 10/10</span>
-        </div>
-        <div class="col">
-            <img src="img/filme2.jpg" class="img-fluid">
-            <h3>Karate Kid Legends</h3>
-            <span>⭐ 10/10</span>
-        </div>
-        <div class="col">
-            <img src="img/filme3.jpg" class="img-fluid">
-            <h3>Lilo e Stitch</h3>
-            <span>⭐ 10/10</span>
-        </div>
-        <div class="col">
-            <img src="img/filme4.jpg" class="img-fluid">
-            <h3>Pecadores</h3>
             <span>⭐ 10/10</span>
         </div>
     </div>
@@ -48,5 +48,47 @@ include "banner.php";
           <img src="img/banner.jpg" class="img-fluid">
         </div>
     </div>
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-warning btn-lg mt-5 fs-5 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Precisa de ajuda? Clique aqui!
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Ajuda 💭</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <p>entrem em contato Atraves dos nossos canais de comunicação</p>
+         <p>E-mail: suportefilmes@gmail.com <br> Whatsapp: (11)707052147 <br><a href="contato.php">Formulário de contato</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg mt-5 fs-5 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+  Venha conhecer nosso site
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModal2Label">Sobre o site 🎬</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <p>Descubra, explore e acompanhe os melhores filmes de todos os gêneros em um só lugar. No CineTime, você encontra sinopses, trailers, elenco, avaliações e todas as informações que precisa para escolher o próximo filme da sua lista. Dos clássicos do cinema às últimas estreias, nossa plataforma foi feita para apaixonados por filmes como você!</p>
+         <a href="listadenoticias.php">Formulario de Informações</a></p>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 <?php include "rodape.php"; ?>

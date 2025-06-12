@@ -148,55 +148,6 @@
       </div>
     </div>
 
-    <!-- Notícia 10 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-100 d-flex flex-column">
-        <img src="img/noticia1.png" class="card-img-top" alt="Notícia 10">
-        <div class="card-body d-flex flex-column text-start">
-          <div>
-            <h5 class="card-title">Entrevista exclusiva com diretor premiado</h5>
-            <p class="card-text">Reflexões sobre carreira e cinema contemporâneo.</p>
-          </div>
-          <div class="mt-auto">
-            <a href="umanoticia.php" class="btn btn-primary w-100">Leia mais</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Notícia 11 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-100 d-flex flex-column">
-        <img src="img/noticia1.png" class="card-img-top" alt="Notícia 11">
-        <div class="card-body d-flex flex-column text-start">
-          <div>
-            <h5 class="card-title">Premiação anuncia vencedores da noite</h5>
-            <p class="card-text">Confira os principais ganhadores e momentos.</p>
-          </div>
-          <div class="mt-auto">
-            <a href="umanoticia.php" class="btn btn-primary w-100">Leia mais</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Notícia 12 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-100 d-flex flex-column">
-        <img src="img/noticia1.png" class="card-img-top" alt="Notícia 12">
-        <div class="card-body d-flex flex-column text-start">
-          <div>
-            <h5 class="card-title">Tendências do cinema para o próximo ano</h5>
-            <p class="card-text">O que esperar e novidades do mercado audiovisual.</p>
-          </div>
-          <div class="mt-auto">
-            <a href="umanoticia.php" class="btn btn-primary w-100">Leia mais</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 <?php include "rodape.php"; ?>
