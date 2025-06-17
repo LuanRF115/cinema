@@ -19,13 +19,28 @@ include "banner.php";
             die("deu ruim" . mysqli_connect_error());
         }
 
-        echo "deu bom";
-        ?>
+        /* Fim da conexão com o DB */
+
+        $sql = "select * from filmes";
+        $resultado = mysqli_query($conexao, $sql);
+       // echo "<pre>";
+       // print_r($resultado);
+        //echo "parou aqui";
+        //exit();
+        //echo "nem chegou aqui";
+        while($linha = mysqli_fetch_assoc($resultado)){
+          ?>
         <div class="col-3">
-            <img src="img/filme1.webp" class="img-fluid">
-            <h3>Jurassic Park</h3>
-            <span>⭐ 10/10</span>
+            <img src="<?=$linha['foto'];?>" class="img-fluid">
+            <h3><?=$linha['titulo'];?></h3>
+            <h3><?=$linha['categoria'];?></h3>
+            <h3 span>⭐ 10/</span><?=$linha['avaliacao'];?></h3>
         </div>
+        <?php
+      }
+
+        ?>
+        
     </div>
 
     <div class="row mt-5">
